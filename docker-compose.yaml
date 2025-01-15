@@ -12,5 +12,10 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
 
+  redis:
+    image: redis
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT}
+
 volumes:
   pg_data:
