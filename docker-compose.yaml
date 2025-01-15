@@ -1,4 +1,4 @@
-name: erp-app
+name: rbac-app
 services:
   db:
     image: postgres:17.2
