@@ -16,5 +16,9 @@ export default registerAs('jwt', () => {
       configService.get('JWT_ACCESS_TOKEN_TTL') ?? '3600',
       10,
     ),
+    refreshTokenTtl: parseInt(
+      configService.get('JWT_REFRESH_TOKEN_TTL') ?? '86400',
+      10,
+    ),
   };
 });
